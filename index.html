@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App!</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- CSS, top is Boostrap, bottom is mine -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- JS, top is bootstrap, bottom is mine. -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+</head>
+<header>
+    <br>
+    <br>
+    <!-- Jumbotron image -->
+<div class="jumbotron jumbosa">
+    <!-- <div class="container"> -->
+        <h1 class="display-4">Get the Weather!</h1>
+        <p class="lead"></p>
+    <!-- </div> -->
+</div>
+<br>
+
+    <!-- Submit Weather form. -->
+    <form action = "" name="submit-form" id="submit-form" class="weathersearch">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <!-- <form action = "" name="submit-form" id="submit-form"> -->
+                    <!-- <div class="form-group"> -->
+                        <label for="whatcity"></label>
+                        <input class="round" type="text" placeholder="City" name="city">
+                    </div>
+            </li>
+            <li class="nav-item">
+                    <!-- <div class="form-group"> -->
+                        <label for="whatcountry"></label>
+                        <input class="round" type="text" placeholder="Country" name="Country">
+                    </div>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary" onClick="getWeather()" type="button">Forecast</button>
+            </li>
+            </ul>
+    </form>
+    <br>
+    <br>                
+</header>
+<body>
+<!-- playing with how the weather pops up -->
+<div class="container tabletime">
+    <table class="table ">
+        <thead>
+            <tr>
+            <th scope="col">Current</th>
+            <th scope="col">High</th>
+            <th scope="col">Low</th>
+            <th scope="col">Humidity</th>
+            <th scope="col">Forecast</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><p id="Current"></p></td>
+            <td><p id="High"></p></td>
+            <td><p id="Low"></p></td>
+            <td><p id="Humidity"></p></td>
+            <td><p id="Forecast"></p></td>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+</body>
+</html>
+
+<!-- prob unusable in a start pattern -->
+<!-- <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-1 current">
+            <p id="Current">Current</p>
+          </div>
+        </div>
+        <div class="row justify-content-start">
+          <div class="col-1 high offset-col-4">
+            <p id="High">High</p>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-1 humidity">
+                <p id="Humidity">Humidity</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+                <div class="col-1 low">
+                    <p id="Low">Low</p>
+                </div>
+            <div class="col-1 forecast">
+                <p id="Forecast">Forecast</p>
+            </div>
+        </div>
+      </div> -->
